@@ -5,7 +5,7 @@ function getRandomArbitrary(min, max) {
 var numeroSecreto = parseInt(getRandomArbitrary(1, 1001))
 var qtdChutes = 10
 
-var chute = prompt('Digite um número entre 0 e 1000')
+var chute = prompt('Digite um número entre 1 e 1000')
 var flag = 1
 
 if(chute < 0 || chute > 1001) {
@@ -14,7 +14,7 @@ if(chute < 0 || chute > 1001) {
 else {
   while(qtdChutes > 0) {
     if(flag != 1) { // PARA NÃO LER O CHUTE 2X CASO ELE NÃO ENTRE NO IF DA LINHA 11
-      var chute = prompt('Digite um número entre 0 e 1000')
+      var chute = prompt('Digite um número entre 1 e 1000')
     }
     qtdChutes--
 
